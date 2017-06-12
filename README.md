@@ -1,1 +1,1 @@
-# antlr-fun-lang
+# Implementation of programming language Fun using ANTLR
