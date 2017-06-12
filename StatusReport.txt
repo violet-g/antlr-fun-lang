@@ -1,0 +1,31 @@
+Gabriela Georgieva
+matric #: 2130120
+
+For these stages of the exercise I followed the steps from the specification and:
+ - implemented the missing methods in FunCheckerVisitor.java:
+     visitSwitch(FunParser.SwitchContext ctx)
+     visitFalseg(FunParser.FalsegContext ctx)
+     visitTrueg(FunParser.TruegContext ctx)
+     visitNumg(FunParser.NumgContext ctx)
+     visitRangeg(FunParser.RangegContext ctx)
+ - added my code template and implemented the missing methods in FunEncoderVisitor.java:
+     visitSwitch(FunParser.SwitchContext ctx)
+     visitFalseg(FunParser.FalsegContext ctx)
+     visitTrueg(FunParser.TruegContext ctx)
+     visitNumg(FunParser.NumgContext ctx)
+     visitRangeg(FunParser.RangegContext ctx)
+-added two instructions to the SVM in SVM.java:
+     LOADR - stands for load range
+     COMPG - stands for compare guard
+
+All extensions were marked with "// EXTENSION" so that they can be found easily.
+
+I checked my solution by adding three new test files:
+"switch.fun", "switch1.fun" and "switch2.fun" (the last one containing errors).
+
+I am running the following commands to test my solution:
+>> cd Fun
+>> export CLASSPATH=/.../antlr-4.5.3-complete.jar:"."
+>> java org.antlr.v4.Tool -no-listener -visitor Fun.g4
+>> javac *.java
+>> java FunRun tests/....fun
